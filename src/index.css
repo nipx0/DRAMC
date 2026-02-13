@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 40% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 40% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 40% 15%;
+
+    --primary: 200 98% 39%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 142 76% 36%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 210 20% 46%;
+
+    --accent: 200 98% 39%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 200 98% 39%;
+
+    --radius: 0.75rem;
+
+    --cyan: 200 98% 39%;
+    --magenta: 330 81% 60%;
+    --yellow: 48 100% 67%;
+    --black: 210 40% 15%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 210 40% 15%;
+    --sidebar-primary: 200 98% 39%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 210 40% 15%;
+    --sidebar-border: 210 20% 90%;
+    --sidebar-ring: 200 98% 39%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-cairo;
+    direction: rtl;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(200 98% 39%), hsl(142 76% 36%));
+  }
+
+  .bg-gradient-gold {
+    background-image: linear-gradient(135deg, hsl(200 98% 39%), hsl(142 76% 36%));
+  }
+
+  .bg-gradient-cmyk {
+    background-image: linear-gradient(135deg, hsl(200 98% 39%), hsl(142 76% 36%), hsl(210 40% 15%));
+  }
+
+  .border-gradient-gold {
+    border-image: linear-gradient(135deg, hsl(200 98% 39%), hsl(142 76% 36%)) 1;
+  }
+
+  .shadow-gold {
+    box-shadow: 0 10px 40px -10px hsl(200 98% 39% / 0.4), 0 0 20px -5px hsl(142 76% 36% / 0.3);
+  }
+
+  .overlay-gradient {
+    background: linear-gradient(180deg, hsl(0 0% 100% / 0.1) 0%, hsl(0 0% 100% / 0.9) 100%);
+  }
+}

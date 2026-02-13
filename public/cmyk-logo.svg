@@ -1,0 +1,33 @@
+<svg width="800" height="900" viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="ringMask">
+      <circle cx="400" cy="300" r="150" fill="white"/>
+      <circle cx="400" cy="300" r="90" fill="black"/>
+    </mask>
+  </defs>
+  
+  <!-- CMYK Ring -->
+  <g mask="url(#ringMask)">
+    <!-- Cyan Quadrant (Top Left) -->
+    <path d="M 250,150 L 400,150 L 400,300 L 250,300 Z" fill="#87CEEB"/>
+    
+    <!-- Magenta Quadrant (Top Right) -->
+    <path d="M 400,150 L 550,150 L 550,300 L 400,300 Z" fill="#EC4899"/>
+    
+    <!-- Yellow Quadrant (Bottom Right) -->
+    <path d="M 400,300 L 550,300 L 550,450 L 400,450 Z" fill="#FDE047"/>
+    
+    <!-- Black Quadrant (Bottom Left) -->
+    <path d="M 250,300 L 400,300 L 400,450 L 250,450 Z" fill="#1A1A1A"/>
+  </g>
+  
+  <!-- White gaps -->
+  <line x1="400" y1="150" x2="400" y2="450" stroke="white" stroke-width="12"/>
+  <line x1="250" y1="300" x2="550" y2="300" stroke="white" stroke-width="12"/>
+  
+  <!-- Arabic Text -->
+  <text x="400" y="550" font-family="Cairo, sans-serif" font-size="48" font-weight="700" text-anchor="middle" fill="#1A1A1A">مطبعة الأحساء الحديثة</text>
+  
+  <!-- English Text -->
+  <text x="400" y="620" font-family="Arial, sans-serif" font-size="36" font-weight="600" text-anchor="middle" fill="#1A1A1A">AL-AHSA MODERN PRESS</text>
+</svg>
