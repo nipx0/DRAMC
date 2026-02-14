@@ -17,7 +17,7 @@ const HeroSection = () => {
     <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white sticky top-0">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img src="/hero-bg.JPG" alt="" className="w-full h-full object-cover opacity-20" />
+        <img src="/hero-bg.PNG" alt="" className="w-full h-full object-cover opacity-5" />
       </div>
 
       {/* Content */}

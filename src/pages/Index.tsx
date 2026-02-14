@@ -10,6 +10,8 @@ import LinktreeSection from "@/components/LinktreeSection";
 import PaymentPartners from "@/components/PaymentPartners";
 import ReviewsScroll from "@/components/ReviewsScroll";
 import InstagramFeed from "@/components/InstagramFeed";
+import PhotoShowcase from "@/components/PhotoShowcase";
+import TestShowcase from "@/components/TestShowcase";
 
 const Index = () => {
   return (
@@ -17,12 +19,14 @@ const Index = () => {
       <ScrollProgress />
       <StickyNav />
       <HeroSection />
+      <TestShowcase />
       <DualServices />
       <PaymentPartners />
       <TrustBar />
       <ReviewsScroll />
-      <InstagramFeed />
       <LinktreeSection />
+      <InstagramFeed />
+      <PhotoShowcase />
       <Footer />
       <FloatingCallButton />
     </main>
