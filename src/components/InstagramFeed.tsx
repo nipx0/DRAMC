@@ -3,13 +3,13 @@ import { useEffect } from "react";
 const InstagramFeed = () => {
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "//www.instagram.com/embed.js";
+    script.src = "https://www.instagram.com/embed.js";
     script.async = true;
     document.body.appendChild(script);
     
-    return () => {
-      document.body.removeChild(script);
-    };
+    if (window.instgrm) {
+      window.instgrm.Embeds.process();
+    }
   }, []);
 
   const posts = [
@@ -23,12 +23,14 @@ const InstagramFeed = () => {
         <h2 className="text-3xl font-bold text-center mb-12">تابعنا على إنستغرام</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {posts.map((url, index) => (
-            <blockquote
-              key={index}
-              className="instagram-media"
-              data-instgrm-permalink={url}
-              data-instgrm-version="14"
-            />
+            <div key={index} className="flex justify-center">
+              <blockquote
+                className="instagram-media"
+                data-instgrm-permalink={url}
+                data-instgrm-version="14"
+                style={{ maxWidth: '540px', width: '100%' }}
+              />
+            </div>
           ))}
         </div>
       </div>
