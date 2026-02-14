@@ -9,6 +9,7 @@ import ScrollProgress from "@/components/ScrollProgress";
 import LinktreeSection from "@/components/LinktreeSection";
 import PaymentPartners from "@/components/PaymentPartners";
 import ReviewsScroll from "@/components/ReviewsScroll";
+import InstagramFeed from "@/components/InstagramFeed";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       <PaymentPartners />
       <TrustBar />
       <ReviewsScroll />
+      <InstagramFeed />
       <LinktreeSection />
       <Footer />
       <FloatingCallButton />
