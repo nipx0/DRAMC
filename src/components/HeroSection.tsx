@@ -26,7 +26,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-3xl md:text-5xl lg:text-6xl font-black mb-6 leading-loose px-4 py-4"
+          className="text-2xl md:text-5xl lg:text-6xl font-black mb-6 leading-relaxed px-2 py-4"
           style={{ filter: 'drop-shadow(0 3px 4px rgba(0,0,0,0.7))' }}
         >
           <span className="text-gradient-gold block mb-2 break-words py-3">مجمع الدكتور أحمد الخواجه</span>

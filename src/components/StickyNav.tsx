@@ -25,7 +25,7 @@ const StickyNav = () => {
           animate={{ opacity: 1, x: 0 }}
           className="flex items-center gap-3"
         >
-          <img src="/logo.JPG" alt="Logo" style={{ height: '160px' }} />
+          <img src="/logo.JPG" alt="Logo" className="h-12 md:h-32 lg:h-40" />
         </motion.div>
 
         <motion.a
