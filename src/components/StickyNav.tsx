@@ -17,15 +17,15 @@ const StickyNav = () => {
   return (
     <motion.nav
       style={{ backgroundColor, boxShadow }}
-      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm"
+      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm w-full"
     >
-      <div className="max-w-6xl mx-auto px-6 flex items-center justify-between" style={{ paddingTop: '0px', paddingBottom: '0px' }}>
+      <div className="w-full max-w-full mx-auto px-6 flex items-center justify-between" style={{ paddingTop: '0px', paddingBottom: '0px' }}>
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="flex items-center gap-3"
+          className="flex items-center gap-3 flex-shrink-0"
         >
-          <img src="/logo.JPG" alt="Logo" className="h-auto max-h-12 md:max-h-24 lg:max-h-32 w-auto max-w-full" />
+          <img src="/logo.JPG" alt="Logo" className="h-auto max-h-12 md:max-h-24 lg:max-h-32 w-auto max-w-[200px]" />
         </motion.div>
 
         <motion.a
