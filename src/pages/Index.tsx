@@ -14,7 +14,7 @@ import PhotoShowcase from "@/components/PhotoShowcase";
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background overflow-x-hidden w-full">
       <ScrollProgress />
       <StickyNav />
       <HeroSection />
