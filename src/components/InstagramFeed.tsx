@@ -14,9 +14,9 @@ const InstagramFeed = () => {
   }, []);
 
   return (
-    <section className="py-16 bg-gradient-to-br from-purple-50 to-pink-50 relative z-10">
+    <section className="py-16 bg-gray-50 relative z-10">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-purple-800">تابعنا على إنستغرام</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">تابعنا على إنستغرام</h2>
         <div className="text-center mb-8">
         </div>
         <div className="overflow-x-auto flex gap-4 px-4 snap-x snap-mandatory scrollbar-hide -mx-4" style={{ WebkitOverflowScrolling: 'touch' }}>
